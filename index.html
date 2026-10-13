@@ -33,15 +33,32 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p><strong>Easy Schedule</strong> respects your privacy and is committed to protecting your personal data. This Privacy Policy explains what information we collect, how it is used, and the rights you have regarding your data.</p>
+  <p><strong>Easy Schedule</strong> (the iOS app and the booking website at easyschedule-ce98a.web.app) respects your privacy. This Privacy Policy explains what information we collect, how it is used, who can see it, and the choices you have.</p>
 
-  <h2>1. Event and Schedule Data</h2>
-  <p>All calendar events created within the app are stored locally on your device or securely in Apple's iCloud if enabled. We do <strong>not</strong> collect, access, or share your event details with any third parties.</p>
+  <h2>1. Your Account</h2>
+  <p>To use Easy Schedule you sign in with email and password, Sign in with Apple, or Google. Sign-in is handled by <strong>Google Firebase Authentication</strong>, which stores your email address (or the private relay address Apple provides) and a user ID. We also store the display name you choose and, if you add one, a small profile photo.</p>
 
-  <h2>2. Shared Events</h2>
-  <p>You may choose to share your schedule with others using a unique UID. This action is entirely optional and fully controlled by you. Shared data is only made accessible to users you explicitly grant permission to.</p>
+  <h2>2. Events, Chats and Tasks</h2>
+  <p>Events you create (title, date and time, color and icon, repeat settings, location if you add one, participants, their responses and time proposals) are stored in <strong>Google Cloud Firestore</strong> so they sync across your devices and with the people you share them with. A copy is also kept on your device so the app works offline.</p>
+  <p>Messages you send in an event's chat and shared to-dos are stored with that event and are visible to its participants. Personal to-dos and notes stay on your device.</p>
 
-  <h2>3. Advertising</h2>
+  <h2>3. Sharing and Your Booking Page</h2>
+  <p>Other people can book time with you through the app or your booking link. To prevent double bookings, your <strong>availability</strong> is readable by anyone who has your user ID or booking link: the start and end times of your busy periods (for events created in the app this can include the event title), your days off, your booking hours, your plan type, and your custom link name if you set one. Event details, notes, chats and participants are <strong>not</strong> part of your availability.</p>
+  <p>Partners you connect with can see your display name and profile photo. People who book you on the website sign in with Google; we save their display name (not their email) so you can see who booked.</p>
+
+  <h2>4. Location (optional)</h2>
+  <p>If you add a place to an event, we store the place name, address and coordinates with that event; participants can see it. When you tap "use current location", your device location is read once to fill in the place. To remind you when to leave, the app uses your current location on your device to ask Apple Maps for the travel time — this location is not uploaded to our servers. You can deny or change location access at any time in iOS Settings.</p>
+
+  <h2>5. iPhone Calendar (optional)</h2>
+  <p>If you turn on "Busy times from iPhone Calendar", the app reads your other calendars on the device and uploads <strong>only the start and end times</strong> of busy periods to your availability — never titles, locations, notes or attendees. "Add to iPhone Calendar" writes an event to your device calendar only when you tap it. You can turn this off in the app or revoke Calendar access in iOS Settings.</p>
+
+  <h2>6. Notifications</h2>
+  <p>If you allow notifications, we store a push token for your device so we can notify you about new events, messages, changes and reminders. Notifications are sent through Apple Push Notification service and Firebase Cloud Messaging.</p>
+
+  <h2>7. Usage Analytics</h2>
+  <p>We use <strong>Google Analytics for Firebase</strong> to understand how the app is used (for example, that an event was created or a screen was opened) so we can improve it. This includes an app-instance identifier, device and app information, and approximate location derived from your IP address. It does not include the content of your events or messages. Crash reports may also be provided by Apple if you share them with developers.</p>
+
+  <h2>8. Advertising</h2>
   <p>The free version of Easy Schedule shows ads provided by <strong>Google AdMob</strong> (Google LLC). <strong>Premium and Pro subscribers do not see ads.</strong></p>
   <p>To show and measure ads, Google may collect and process:</p>
   <ul>
@@ -55,51 +72,49 @@
   <p><strong>Rewarded ads:</strong> Free users can optionally watch a short ad to unlock one extra event for a day. Watching ads is never required.</p>
   <p>Google's use of this data is governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Learn more about <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a>.</p>
 
-  <h2>4. Data We Do NOT Collect</h2>
-  <p>Easy Schedule does <strong>not</strong> collect or request access to:</p>
+  <h2>9. Premium Subscription &amp; Payments</h2>
+  <p>All subscriptions and payments are processed by Apple's In-App Purchase system. Easy Schedule never receives your payment information, billing details or Apple ID credentials; we only learn which plan is active so we can unlock its features.</p>
+
+  <h2>10. Service Providers</h2>
+  <p>We do not sell your personal data. We share data only with the providers needed to run the service: <strong>Google Firebase</strong> (Authentication, Cloud Firestore, Cloud Functions, Cloud Storage, Cloud Messaging, Analytics and Hosting), <strong>Google AdMob</strong> (ads in the free version) and <strong>Apple</strong> (Sign in with Apple, In-App Purchase, Maps and push notifications). Their handling of data is governed by their own privacy policies.</p>
+
+  <h2>11. Data Retention and Deletion</h2>
   <ul>
-    <li>Contacts</li>
-    <li>Health data</li>
+    <li>Events, their chats and shared to-dos are removed from our servers automatically shortly after the event has ended. A private copy of past events may remain on your device until you delete the app.</li>
+    <li>We keep simple counts linked to your account (for example, how many appointments you had at each hour of the day) until you delete your account.</li>
+    <li>You can delete your account at any time in the app (Settings &gt; Account). This permanently deletes your account, profile and photo, the events you own or created, your availability and booking link, and your sharing permissions.</li>
   </ul>
-  <p>We do not sell your personal data.</p>
 
-  <h2>5. Premium Subscription & Payments</h2>
-  <p>All subscriptions and payments are processed securely via Apple’s <strong>In-App Purchase</strong> system. Easy Schedule does not store or have access to your payment information, billing details, or Apple ID credentials.</p>
+  <h2>12. Data We Do NOT Collect</h2>
+  <p>Easy Schedule does <strong>not</strong> collect or request access to your contacts, photos library (other than a photo you pick for your profile) or health data.</p>
 
-  <h2>6. Performance & Crash Data</h2>
-  <p>We may collect anonymized crash reports and performance analytics through Apple’s system APIs (e.g., Apple Crash Logs). This data helps us improve app stability but does not contain personally identifiable information.</p>
+  <h2>13. Security</h2>
+  <p>Data is transmitted over encrypted connections (HTTPS/TLS) and stored by Google Firebase with encryption at rest. Access rules ensure that only you, the participants of your events, and — for your availability only — people with your booking link can read your data.</p>
 
-  <h2>7. Data Retention</h2>
-  <p>We retain only the minimal information required for app functionality. Event data remains on your device until you delete the app or remove it manually. We do not store any personal data on our servers.</p>
+  <h2>14. Children's Privacy</h2>
+  <p>Easy Schedule is not designed for children under 13. We do not knowingly collect personal data from children. If we learn that such data has been collected, we will delete it promptly.</p>
 
-  <h2>8. Security</h2>
-  <p>Your data is protected using industry-standard security practices, including encryption managed by Apple. We only share data with the service providers needed to run the app, such as Google Firebase (sign-in and sync) and, in the free version, Google AdMob (ads).</p>
-
-  <h2>9. Children’s Privacy</h2>
-  <p>Easy Schedule is not designed for children under 13. We do not knowingly collect personal data from children. If we learn that such data has been collected, we will delete it immediately.</p>
-
-  <h2>10. Your Rights (GDPR/CCPA Compliance)</h2>
-  <p>Depending on your region, you may have the right to:</p>
+  <h2>15. Your Rights (GDPR/CCPA)</h2>
+  <p>Depending on where you live, you may have the right to:</p>
   <ul>
-    <li>Access your data</li>
-    <li>Request deletion of your data</li>
+    <li>Access the personal data we hold about you</li>
+    <li>Correct or delete your data (you can delete your account directly in the app)</li>
+    <li>Object to or restrict certain processing</li>
     <li>Opt out of personalized ads (iOS Settings &gt; Privacy &amp; Security &gt; Tracking, or in the EEA/UK: Settings &gt; Ad privacy choices in the app)</li>
   </ul>
-  <p>If you want to exercise these rights, please contact us.</p>
+  <p>To exercise these rights, contact us using the details below.</p>
 
-  <h2>11. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy when necessary. Updates will be posted on this page with a revised date.</p>
+  <h2>16. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy when the app changes. Updates will be posted on this page with a new date.</p>
 
-  <h2>12. Contact Us</h2>
+  <h2>17. Contact Us</h2>
   <p>If you have any questions about this Privacy Policy or your data, please contact us at:</p>
-  <p>
-    Email: <a href="mailto:Manhcuong5311@gmail.com">Manhcuong5311@gmail.com</a><br>
-    Developer: Easy Schedule Team
-  </p>
+  <p>Email: <a href="mailto:Manhcuong5311@gmail.com">Manhcuong5311@gmail.com</a><br>
+  Developer: Easy Schedule Team</p>
 
   <footer>
-    <p>© 2025–2026 Easy Schedule. All rights reserved.</p>
-    <p>Last Updated: October 2026</p>
+    © 2025–2026 Easy Schedule. All rights reserved.<br>
+    Last Updated: October 13, 2026
   </footer>
 </body>
 </html>
